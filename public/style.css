@@ -1,0 +1,9 @@
+.navigation {
+    background-color: rgba(0, 255, 127);
+    border-bottom: 5px solid #0088d7;
+}
+
+.navbar-nav > li >a{
+  color:black;
+  font-weight: bold;
+}
