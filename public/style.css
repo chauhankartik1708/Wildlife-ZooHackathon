@@ -1,0 +1,14 @@
+.mynav{
+    background-color: rgb(0,255,127) ;
+
+}
+body{
+    background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5);
+    background-size: 300% 100%;
+    background-position: 0% center;
+    -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -ms-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+}
