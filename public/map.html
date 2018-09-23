@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="maps.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navigation sticky-top">
+    <a href="index.html" class="navbar-brand">
+        <img src="wwf.png" width="150px" height="65px" alt="place logo here">
+    </a>
+</nav>
+
+<div id="map-layer"></div>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqoy9ep6e67s2W9nvMlyKqieWyP85kS74&callback=initMap"
+        async defer></script>
+<script type="text/javascript">
+
+    var map;
+        function initMap() {
+            if ("geolocation" in navigator){
+                navigator.geolocation.getCurrentPosition(function(position){
+                    var currentLatitude = position.coords.latitude;
+                    var currentLongitude = position.coords.longitude;
+                    var myLatLng = {lat: currentLatitude, lng: currentLongitude};
+                    var map = new google.maps.Map(document.getElementById('map-layer'), {
+                        zoom: 14,
+                        center: myLatLng
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myLatLng,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                    var hallo = {lat:28.681429, lng:77.222687};
+                    var marker = new google.maps.Marker({
+                        position: hallo,
+                        map: map,
+                        title: 'Hello World!'
+                    });
+                    var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+                    var marker = new google.maps.Marker({
+                        position: {lat:28.680910,lng:77.204590},
+                        map: map,
+                        icon: ''
+                    });
+                });
+        }
+}
+initMap()
+
+
+</script>
+</body>
+</html>

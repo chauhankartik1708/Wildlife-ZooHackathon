@@ -8,8 +8,8 @@
   font-weight: bold;
 }
 body{
-    background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5);
-    background-size: 300% 100%;
+   /* background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5);
+   */ background-size: 300% 100%;
     background-position: 0% center;
     -webkit-animation: gradientAnimation 10s ease infinite;
     -moz-animation: gradientAnimation 10s ease infinite;
@@ -17,6 +17,14 @@ body{
     -o-animation: gradientAnimation 10s ease infinite;
     animation: gradientAnimation 10s ease infinite;
     background-attachment: fixed;
+    animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% { background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5)}
+    25%{ background-image: linear-gradient(to right, #cc2b5e , #753a88);}
+    50%{ background-image: linear-gradient(to right, #eb3349 ,#f45c43);}
+    75%{ background-image: linear-gradient(to right, #eecda3 ,#ef629f);}
+    100% { background-image: linear-gradient(to right, #7b4397,#dc2430);}
 }
 .temp{
     width: 100%;
