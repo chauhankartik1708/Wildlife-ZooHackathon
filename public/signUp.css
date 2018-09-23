@@ -1,0 +1,47 @@
+body{
+    /* background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5);
+    */ -webkit-animation: gradientAnimation 10s ease infinite;
+    -moz-animation: gradientAnimation 10s ease infinite;
+    -ms-animation: gradientAnimation 10s ease infinite;
+    -o-animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 10s ease infinite;
+    background-attachment: fixed;
+    animation: myanimation 10s infinite;
+}
+@keyframes myanimation {
+    0% { background-image: linear-gradient(to right, #D96BE5, #E86E21, #D96BE5) }
+    35%{ background-image: linear-gradient(to right, #cc2b5e , #753a88);}
+    60%{ background-image: linear-gradient(to right, #eb3349 ,#f45c43);}
+    80%{ background-image: linear-gradient(to right, #42275a , #734b6d);}
+    100% { background-image: linear-gradient(to right, #614385 ,#516395);}
+}
+
+.main{
+    background-color:whitesmoke;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    height: 600px;
+    width:600px;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border: 3px solid black;
+}
+.container{
+    width: 100%;
+   /* padding-top: 30px;*/
+    align-content: center;
+}
+.helloji{
+    margin-top: 10px;
+}
+.lay{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.laySu{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
