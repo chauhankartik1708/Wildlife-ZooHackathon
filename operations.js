@@ -8,18 +8,14 @@ function add(connection,name,lat,lon,item,pno,pass,cb){
         cb(results);
     });
 }
-/*
-function set(connection,lat,lon,val,cb){
-    console.log(val);
-    var sql=`SELECT * FROM worker WHERE pro='${val}'`;
-
+function set(connection,cb){
+    var sql=`SELECT * FROM seller`;
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;
         cb(results);
     });
 
 }
-*/
 module.exports={
-    add
+    add,set
 }

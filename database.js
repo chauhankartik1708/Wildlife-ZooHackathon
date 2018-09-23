@@ -18,14 +18,11 @@ function addData(name,lat,lon,item,pno,pass,cb){
       cb(data);
     })
 }
-/*
-function sendUser(lat,lon,val,cb){
-
-operations.set(connection,lat,lon,val,function (data) {
+function sendUser(cb){
+operations.set(connection,function (data) {
     cb(data);
 })
 }
-*/
 module.exports ={
-    connectDB,addData,connection
+    connectDB,addData,sendUser,connection
 };
